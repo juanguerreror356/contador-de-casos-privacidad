@@ -1,64 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad – Contador de casos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #0A2E5A;
-        }
-    </style>
-</head>
-<body>
-    <h1>Política de Privacidad – Contador de casos</h1>
-    <p>Fecha de última actualización: 1 de agosto de 2025</p>
+# Contador de Casos – Política de Privacidad
 
-    <h2>1. Introducción</h2>
-    <p>Esta política de privacidad describe cómo la extensión <strong>Contador de casos</strong> recopila, utiliza y protege la información de los usuarios. Esta extensión es una herramienta interna destinada a representantes de servicio al cliente para llevar el conteo de los casos gestionados cada día y semana.</p>
+Este repositorio contiene la **política de privacidad oficial** de la extensión de Chrome **"Contador de Casos"**, desarrollada para el equipo de servicio al cliente de Mercado Libre Colombia S.A.S.
 
-    <h2>2. Datos que recopilamos</h2>
-    <p>La extensión recopila y almacena únicamente los siguientes datos:</p>
-    <ul>
-        <li><strong>LDAP del agente y nombre de líder:</strong> Se solicitan al iniciar sesión en la extensión para identificar al usuario y asociar sus casos.</li>
-        <li><strong>ID de cada caso:</strong> El número de identificación del caso gestionado que el agente introduce manualmente.</li>
-        <li><strong>Fecha y hora del clic:</strong> Se registra automáticamente la fecha y hora locales (zona América/Bogotá) cada vez que el usuario marca un caso como ON u OFF.</li>
-        <li><strong>Tipo de caso:</strong> Indica si el caso fue atendido en WhatsApp (ON) o por correo electrónico (OFF).</li>
-        <li><strong>Meta semanal y progreso:</strong> El objetivo de casos que el agente define para su semana y el porcentaje de avance.</li>
-    </ul>
+La política publicada cumple con los requisitos de la Chrome Web Store y puede ser consultada públicamente en:
 
-    <h2>3. Cómo usamos los datos</h2>
-    <p>Los datos recopilados se utilizan únicamente para:</p>
-    <ul>
-        <li>Llevar un registro individual de los casos atendidos por cada agente.</li>
-        <li>Calcular estadísticas diarias y semanales (totales ON/OFF, progreso hacia la meta y ranking entre agentes).</li>
-        <li>Enviar notificaciones motivacionales al usuario cuando alcanza ciertos hitos (25&nbsp;%, 50&nbsp;%, 75&nbsp;% y 100&nbsp;% de su meta semanal) y recordatorios relacionados con la meta diaria mínima.</li>
-    </ul>
-    <p>Estos datos no se utilizan con fines comerciales ni se comparten para publicidad.</p>
+👉 [https://juanguerreror356.github.io/contador-de-casos-privacidad/privacy_policy.html](https://juanguerreror356.github.io/contador-de-casos-privacidad/privacy_policy.html)
 
-    <h2>4. Almacenamiento y compartición de datos</h2>
-    <p>Los datos se guardan de las siguientes maneras:</p>
-    <ul>
-        <li><strong>En el dispositivo del usuario:</strong> Se usan las APIs <code>chrome.storage</code> y <code>chrome.storage.sync</code> para conservar localmente el LDAP, el líder, los contadores y la meta semanal. Esto garantiza que la información persista entre sesiones de navegador.</li>
-        <li><strong>En Google Sheets:</strong> Cada vez que se registra un caso, la extensión envía los datos al script de Google Apps Script administrado por la empresa. Ese script guarda cada evento en una hoja de cálculo compartida (una pestaña por agente) para consolidar la información y generar estadísticas de equipo.</li>
-    </ul>
-    <p>La extensión <strong>no</strong> comparte datos con terceros ajenos a la organización ni con servicios publicitarios. Toda la información se usa exclusivamente para fines internos de productividad.</p>
+---
 
-    <h2>5. Conservación de los datos</h2>
-    <p>Los datos se conservan durante el tiempo necesario para el análisis interno de rendimiento. Los registros diarios y semanales se mantienen en la hoja de cálculo con fines estadísticos y de mejora continua. Los usuarios pueden solicitar la eliminación de sus datos comunicándose con el responsable indicado en la sección 6.</p>
+## ¿Qué es esta extensión?
 
-    <h2>6. Responsable del tratamiento y contacto</h2>
-    <p>El responsable del tratamiento de los datos es <strong>Mercado Libre Colombia S.A.S.</strong> Si tienes preguntas sobre esta política o deseas ejercer tus derechos de acceso, rectificación o supresión de datos, escribe a <a href="mailto:soporte.extensiones@mercadolibre.com">soporte.extensiones@mercadolibre.com</a>.</p>
+La extensión permite a los representantes del chat center llevar un registro diario y semanal de los casos atendidos por tipo (ON / OFF), conectarse con su meta personal, y recibir notificaciones de progreso.
 
-    <h2>7. Cambios en la política</h2>
-    <p>Nos reservamos el derecho de modificar esta política de privacidad. Si realizamos cambios significativos, notificaremos a los usuarios mediante un aviso en la extensión o por los canales habituales de comunicación interna.</p>
+---
 
-</body>
-</html>
+## Archivos importantes
+
+- `privacy_policy.html`: documento legal con los detalles sobre qué datos se recopilan, cómo se usan y cómo se almacenan.
+
